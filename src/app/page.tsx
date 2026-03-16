@@ -67,8 +67,9 @@ context.imageSmoothingQuality = 'high';
 
       const frameCount = 191;
 
+// שנה מ-jpg ל-png
 const currentFrame = (index: number) =>
-  `/frames/ezgif-frame-${(index + 1).toString().padStart(3, "0")}.jpg`;
+  `/frames/ezgif-frame-${(index + 1).toString().padStart(3, "0")}.png`;
 
       let images: FrameImages = [];
       let imagesToLoad = frameCount;
@@ -213,14 +214,14 @@ const currentFrame = (index: number) =>
 
 return (
   <div ref={containerRef} className="bg-black text-white overflow-x-hidden">
-    <nav ref={navRef} className="fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-10 py-4 bg-black/50 backdrop-blur-md">
+    <nav ref={navRef} className="fixed top-0 w-full z-50 flex justify-between items-center px-1 md:px-1 bg-black/50 backdrop-blur-md">
       <div className="logo text-xl md:text-2xl font-bold tracking-tighter">
         <a href="#" className="flex items-center gap-2">
           <span className="text-red-600">V8</span> CLASSIC
         </a>
       </div>
       
-      <div className="hidden md:flex gap-8 font-medium uppercase text-sm tracking-widest">
+      <div className="hidden md:flex gap-3 font-medium uppercase text-sm tracking-widest">
         <a href="#" className="hover:text-red-500 transition">התהליך</a>
         <a href="#" className="hover:text-red-500 transition">פרויקטים</a>
         <a href="#" className="hover:text-red-500 transition">גלריה</a>
