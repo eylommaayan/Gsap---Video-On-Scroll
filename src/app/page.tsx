@@ -229,7 +229,7 @@ return (
 
       <div className="flex gap-2 md:gap-4">
         <button className="bg-red-700 hover:bg-red-600 text-white px-3 py-1 md:px-6 md:py-2 rounded-full text-xs md:text-sm font-bold uppercase transition">
-          קבע ייעוץ
+          קבע ייעוץ לחווית נסיעה מטורפתת
         </button>
       </div>
     </nav>
